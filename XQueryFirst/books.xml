@@ -1,0 +1,40 @@
+<bookstore>
+	<book category="dummyhans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<title xsi:nil="true" />
+		<author>Ajeet Kumar</author>
+		<year>2012</year>
+		<price>200.00</price>
+	</book>
+
+
+
+	<book category="web">
+		<title lang="en">HTML is Fun.</title>
+		<author>Ajeet Kumar</author>
+		<year>2012</year>
+		<price>200.00</price>
+	</book>
+	<book category="children">
+		<title lang="en">Harry Potter</title>
+		<author>J K. Rowling</author>
+		<year>2005</year>
+		<price>600.00</price>
+	</book>
+	<book category="programming">
+		<title lang="en">Learn Java Programming</title>
+		<author>James Gowsling</author>
+		<author>Peter Brown</author>
+		<author>Sri Bala</author>
+		<author>James Linn</author>
+		<author>Vaidyanathan Nagarajan</author>
+		<year>2003</year>
+		<price>400.00</price>
+	</book>
+	<book category="web" cover="paperback">
+		<title lang="en">Learning XML</title>
+		<author>Aryan Tomar</author>
+		<year>2013</year>
+		<price>150.00</price>
+	</book>
+</bookstore>  
