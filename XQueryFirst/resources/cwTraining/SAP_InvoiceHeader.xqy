@@ -41,21 +41,19 @@ let $iDocPaymentTerms :=
     </PaymentTerm> 
 
 return 
-<result>
- 	<Message>
- 		<Header>
- 			<iDocInvoiceNr>{data($E/E1EDK01/BELNR)}</iDocInvoiceNr>
- 			<iDocInvoiceType>{$iDocInvoiceType}</iDocInvoiceType>
- 			<iDocInvoiceTypeEancom>{$iDocInvoiceTypeEancom}</iDocInvoiceTypeEancom>
- 			<iDocInvoiceDt>{$iDocInvoiceDt}</iDocInvoiceDt>
- 			<iDocBuyerOrderDt>{$iDocBuyerOrderDt}</iDocBuyerOrderDt>
- 			<iDocDeliveryDt>{$iDocDeliveryDt}</iDocDeliveryDt>
- 			<iDocInvoiceDueDt>{$iDocInvoiceDueDt}</iDocInvoiceDueDt>
- 			<iDocCurrency>{data($E/E1EDK01/CURCY)}</iDocCurrency>
-			<iDocDeliveryNote>{$iDocDeliveryNote}</iDocDeliveryNote>
- 		</Header>
- 		<PaymentTerms>
- 		  {$iDocPaymentTerms}
- 		</PaymentTerms>
- 	</Message>
-</result>  
+<Message>
+	<Header>
+		<iDocInvoiceNr>{data($E/E1EDK01/BELNR)}</iDocInvoiceNr>
+		<iDocInvoiceType>{$iDocInvoiceType}</iDocInvoiceType>
+		<iDocInvoiceTypeEancom>{$iDocInvoiceTypeEancom}</iDocInvoiceTypeEancom>
+		<iDocInvoiceDt>{$iDocInvoiceDt}</iDocInvoiceDt>
+		<iDocBuyerOrderDt>{$iDocBuyerOrderDt}</iDocBuyerOrderDt>
+		<iDocDeliveryDt>{$iDocDeliveryDt}</iDocDeliveryDt>
+		<iDocInvoiceDueDt>{$iDocInvoiceDueDt}</iDocInvoiceDueDt>
+		<iDocCurrency>{data($E/E1EDK01/CURCY)}</iDocCurrency>
+		<iDocDeliveryNote>{$iDocDeliveryNote}</iDocDeliveryNote>
+	</Header>
+	<PaymentTerms>
+	  {$iDocPaymentTerms}
+	</PaymentTerms>
+</Message>
