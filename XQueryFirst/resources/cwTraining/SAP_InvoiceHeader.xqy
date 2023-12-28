@@ -26,16 +26,16 @@ let $iDocPaymentTerms :=
   for $segment in $E/E1EDK18
   return
     <PaymentTerm>
-      <Qual>{if ($segment/QUALF = '001') then 'DEF' else 'EXT'}</Qual>
+      <iDocQual>{if ($segment/QUALF = '001') then 'DEF' else 'EXT'}</iDocQual>
 	    {
 	    if ($segment/PRZNT)
-	    then <DiscountPct>{data($segment/PRZNT)}</DiscountPct>
+	    then <iDocDiscountPct>{data($segment/PRZNT)}</iDocDiscountPct>
 	    else (),
 	    if ($segment/TAGE)
-	    then <NumDays>{data($segment/TAGE)}</NumDays>
+	    then <iDocNumDays>{data($segment/TAGE)}</iDocNumDays>
 	    else (),
 	    if ($segment/ZTERM_TXT)
-	    then <Remarks>{data($segment/ZTERM_TXT)}</Remarks>
+	    then <iDocRemarks>{data($segment/ZTERM_TXT)}</iDocRemarks>
 	    else ()
 	    }
     </PaymentTerm> 
